@@ -174,6 +174,8 @@ namespace Exercices
 		/// </summary>
 		private static void DisplayFiles()
 		{
+			string space = string.Empty;
+
 			for (int i = 0; i < _filesPaths.Length; i++)
 			{
 				if (_currentOption == i)
@@ -182,7 +184,16 @@ namespace Exercices
 					Console.ForegroundColor = ConsoleColor.Black;
 				}
 
-				Console.WriteLine($" {i} : {Path.GetFileNameWithoutExtension(_filesPaths[i])} ");
+				if(i<10)
+				{
+					space = " ";
+				}
+				else
+				{
+					space = string.Empty;
+				}
+
+				Console.WriteLine($" {space}{i} : {Path.GetFileNameWithoutExtension(_filesPaths[i])} ");
 
 				if (_currentOption == i)
 				{

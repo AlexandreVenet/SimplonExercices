@@ -48,7 +48,7 @@ namespace Exercices.Exercises
 			{
 				currentDigit = tester % 10; // récupérer le digit de fin
 				result = result + Math.Pow(currentDigit,3); // Ajouter au résultat le digit au cube 
-				tester = tester / 10; // récupérer les digits précédents celui utilisé (avec int, on a une troncature des décimales)
+				tester = tester / 10; // récupérer les digits précédant celui utilisé (avec int, on a une troncature des décimales)
 
 				sb.Append($"({currentDigit} x {currentDigit} x {currentDigit}) + "); // derniers caractères : "+ "
 			}

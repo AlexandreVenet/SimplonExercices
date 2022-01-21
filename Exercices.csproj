@@ -52,6 +52,7 @@
     <Compile Include="Exercises\GetNumbersInText.cs" />
     <Compile Include="Exercises\LeapYear.cs" />
     <Compile Include="Exercises\OddEven.cs" />
+    <Compile Include="Exercises\ReverseNumber.cs" />
     <Compile Include="Exercises\SwapValues.cs" />
     <Compile Include="Exercises\TypeSize.cs" />
     <Compile Include="Program.cs" />
