@@ -31,6 +31,12 @@ namespace Exercices.Exercises
             string pattern = @"-?\d+";
 			MatchCollection matches = Regex.Matches(str, pattern);
 
+			if(matches.Count == 0)
+			{
+				WriteAndWaitForEnter("Cette chaîne ne contient pas de nombres.");
+				return;
+			}
+
 			StringBuilder sbAll = new StringBuilder();
 			StringBuilder sbEach = new StringBuilder();
 

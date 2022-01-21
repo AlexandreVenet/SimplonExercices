@@ -23,7 +23,6 @@ namespace Exercices
 		private enum CurrentScreen
 		{
 			Home,
-			RefreshHome,
 			App,
 			End,
 		}
@@ -51,13 +50,10 @@ namespace Exercices
 				switch (_currentScreen)
 				{
 					case CurrentScreen.Home:
+						Console.Clear();
 						HeaderFooter("Programme en boucle. Naviguer [Haut/Bas]. Valider [Entrée].");
 						DisplayFiles();
 						SelectOption();
-						break;
-					case CurrentScreen.RefreshHome:
-						Console.Clear();
-						_currentScreen = CurrentScreen.Home;
 						break;
 					case CurrentScreen.App:
 						Console.Clear();
@@ -225,14 +221,11 @@ namespace Exercices
 				hasEntered = true;
 			}
 			
-			if(!hasEntered)
-			{
-				_currentScreen = CurrentScreen.RefreshHome;
-			}
-			else
+			if(hasEntered)
 			{
 				_currentScreen = CurrentScreen.App;
 			}
+			// Si !hasEntered, retour automatique au même état
 	  
 		}
 
