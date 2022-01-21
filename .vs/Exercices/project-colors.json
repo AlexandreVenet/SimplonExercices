@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f5974bef-6df5-4330-9ed5-0f3e1fe59d7b": {
+      "ProjectGuid": "f5974bef-6df5-4330-9ed5-0f3e1fe59d7b",
+      "DisplayName": "Exercices",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

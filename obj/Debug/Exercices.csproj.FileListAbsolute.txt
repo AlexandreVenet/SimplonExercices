@@ -1,0 +1,8 @@
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\bin\Debug\Exercices.exe.config
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\bin\Debug\Exercices.exe
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\bin\Debug\Exercices.pdb
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\obj\Debug\Exercices.csproj.AssemblyReference.cache
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\obj\Debug\Exercices.csproj.SuggestedBindingRedirects.cache
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\obj\Debug\Exercices.csproj.CoreCompileInputs.cache
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\obj\Debug\Exercices.exe
+C:\Users\Apprenant\Documents\DotNet_exercices\Exercices\obj\Debug\Exercices.pdb
