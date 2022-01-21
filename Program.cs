@@ -65,7 +65,6 @@ namespace Exercices
 					case CurrentScreen.End:
 						HeaderFooter("Fin de boucle de progamme.");
 						HasPressedEnter();
-						Console.Clear();
 						_currentScreen = CurrentScreen.Home;
 						break;
 					default:
