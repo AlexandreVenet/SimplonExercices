@@ -51,7 +51,7 @@ namespace Exercices
 				{
 					case CurrentScreen.Home:
 						Console.Clear();
-						HeaderFooter("Programme en boucle. Naviguer [Haut/Bas]. Valider [Entrée].");
+						HeaderFooter("Programme en boucle. Naviguer [Haut/Bas] Valider [Entrée] Quitter [Echap].");
 						DisplayFiles();
 						SelectOption();
 						break;
@@ -205,26 +205,33 @@ namespace Exercices
 			bool hasEntered = false;
 			ConsoleKeyInfo keyPressed = Console.ReadKey();
 
-			if(keyPressed.Key == ConsoleKey.UpArrow)
+			switch (keyPressed.Key)
 			{
-				_currentOption--;
-				if (_currentOption < 0) _currentOption = _totalFiles - 1;
-			}
-			else if(keyPressed.Key == ConsoleKey.DownArrow)
-			{
-				_currentOption++;
-				if (_currentOption > _totalFiles -1) _currentOption = 0;
-			}
-			else if(keyPressed.Key == ConsoleKey.Enter)
-			{
-				hasEntered = true;
+				case ConsoleKey.UpArrow:
+					_currentOption--;
+					if (_currentOption < 0) _currentOption = _totalFiles - 1;
+					break;
+				case ConsoleKey.DownArrow:
+					_currentOption++;
+					if (_currentOption > _totalFiles - 1) _currentOption = 0;
+					break;
+				case ConsoleKey.Enter:
+					hasEntered = true;
+					break;
+				case ConsoleKey.Escape:
+					_isRunning = false;
+					Environment.Exit(Environment.ExitCode);
+					return;
+					//break;
+				default:
+					break;
 			}
 			
 			if(hasEntered)
 			{
 				_currentScreen = CurrentScreen.App;
 			}
-			// Si !hasEntered, retour automatique au même état
+			// Si !hasEntered, retour automatique au même état puisque programme dans un while(_isRunning)
 	  
 		}
 
