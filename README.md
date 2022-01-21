@@ -5,3 +5,5 @@ Simplon a donné quelques exercices en C# sous forme de programmes de type **Con
 Le programme principal liste les fichiers (`System.IO`). Il récupère l'`Assembly` actuelle. Avec `Activator`, la classe est instanciée et le sous-programme se lance.
 
 Le programme est **évolutif** : pour ajouter un nouvel exercice, il suffit de créer la classe correspondante (héritage de la classe `BaseExercice`) et le programme principal le prendra en charge automatiquement.
+
+Le présent dépôt Github contient toute la **solution** Visual Studio.
